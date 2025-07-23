@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ghumman - Editor</title>
   <link rel="icon" href="https://res.cloudinary.com/dl7vrgenz/image/upload/v1747967163/ghummaneditor_h0v1sk.png" type="image/x-icon" />
-  <meta name="description" content="Ghumman VFX - Professional video editor & motion designer portfolio. Watch cinematic edits, VFX reels, and branding promos.">
-  <meta name="keywords" content="video editor, motion designer, VFX, portfolio, After Effects, Premiere Pro, video editor for hire, video editor for hiring, video editor in kuwait, video editor in UAE, Video editor in Dubai, Video ediror in Guld, best video editor for hire, best video editor">
-  <meta name="author" content="Ghumman VFX">
+  <meta name="description" content="Ghumman GFX - Professional video editor & motion designer portfolio. Watch cinematic edits, GFX reels, and branding promos.">
+  <meta name="keywords" content="video editor, motion designer, GFX, portfolio, After Effects, Premiere Pro, video editor for hire, video editor for hiring, video editor in kuwait, video editor in UAE, Video editor in Dubai, Video ediror in Guld, best video editor for hire, best video editor">
+  <meta name="author" content="Ghumman GFX">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -59,25 +59,8 @@
     .logo img {
       height: 50px;
     }
-    .hamburger {
-      display: none;
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 0;
-      z-index: 1001;
-    }
-    .hamburger span {
-      display: block;
-      width: 25px;
-      height: 3px;
-      background: #fff;
-      margin: 5px 0;
-      transition: 0.3s;
-    }
     nav {
-      display: flex;
-      gap: 25px;
+      display: flex; gap: 25px;
     }
     nav a {
       color: #fff;
@@ -427,59 +410,19 @@ body::-webkit-scrollbar-thumb:hover {
         margin-right: 40px;
       }
     }
-
-    @media screen and (max-width: 768px) {
-      .hamburger {
-        display: block;
-      }
-      .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-      }
-      .hamburger.active span:nth-child(2) {
-        opacity: 0;
-      }
-      .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-      }
-      nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        height: 100vh;
-        background: rgba(16,16,16,0.95);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 0.3s;
-        backdrop-filter: blur(10px);
-      }
-      nav.active {
-        right: 0;
-      }
-      nav a {
-        font-size: 1.2rem;
-        margin: 15px 0;
-      }
-    }
   </style>
 </head>
 <body>
-  <div id="loader"><span>Loading GHUMMAN VFX...</span></div>
+  <div id="loader"><span>Loading GHUMMAN GFX...</span></div>
 
   <header>
     <div class="logo">
-      <img src="https://res.cloudinary.com/dl7vrgenz/image/upload/v1747967163/ghummaneditor_h0v1sk.png" alt="Ghumman VFX Logo">
+      <img src="https://res.cloudinary.com/dl7vrgenz/image/upload/v1747967163/ghummaneditor_h0v1sk.png" alt="GHUMMAN GFX Logo" />
     </div>
-    <button class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#work">Work</a>
+      <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -499,13 +442,13 @@ body::-webkit-scrollbar-thumb:hover {
   <section id="about">
     <h2 class="section-title">Introduction</h2>
     <div class="about">
-      <p>Welcome to my futuristic editing zone. I'm a cinematic editor and motion designer who crafts stories with rhythm, mood, and color. I blend GFX, seamless cuts, and sound sync to create stunning visual narratives — whether you're a YouTuber, a brand, or a filmmaker.</p>
+      <p>Welcome to my futuristic editing zone. I’m a cinematic editor and motion designer who crafts stories with rhythm, mood, and color. I blend GFX, seamless cuts, and sound sync to create stunning visual narratives — whether you're a YouTuber, a brand, or a filmmaker.</p>
       <div class="skills">
         <div class="skill-badge">After Effects</div>
         <div class="skill-badge">Premiere Pro</div>
         <div class="skill-badge">Photoshop</div>
-        <div class="skill-badge">DaVinci Resolve</div>
-        <div class="skill-badge">VFX</div>
+        <div class="skill-badge">Illustrator</div>
+        <div class="skill-badge">GFX</div>
         <div class="skill-badge">Motion Graphics</div>
       </div>
     </div>
@@ -514,7 +457,7 @@ body::-webkit-scrollbar-thumb:hover {
   <section id="portfolio">
     <h2 class="section-title">Portfolio</h2>
     <div class="dropdown">
-      <button aria-expanded="false" onclick="toggleDropdown('aspect-16-9', this)">16:9 Aspect Ratio</button>
+      <button aria-expanded="false" onclick="toggleDropdown('aspect-16-9', this)">16:9 Aspect Ratio (YouTube ETC)</button>
       <div id="aspect-16-9" class="dropdown-content" aria-hidden="true">
         <button aria-expanded="false" onclick="toggleDropdown('style1-16-9', this)">Style 1</button>
         <div id="style1-16-9" class="dropdown-content" aria-hidden="true">
@@ -552,7 +495,7 @@ body::-webkit-scrollbar-thumb:hover {
         </div>
       </div>
 
-      <button aria-expanded="false" onclick="toggleDropdown('aspect-9-16', this)">9:16 Aspect Ratio</button>
+      <button aria-expanded="false" onclick="toggleDropdown('aspect-9-16', this)">9:16 Aspect Ratio (Reels | TikTok | YT Shorts ETC}</button>
       <div id="aspect-9-16" class="dropdown-content" aria-hidden="true">
         <button aria-expanded="false" onclick="toggleDropdown('style1-9-16', this)">Style 1</button>
         <div id="style1-9-16" class="dropdown-content" aria-hidden="true">
@@ -584,34 +527,35 @@ body::-webkit-scrollbar-thumb:hover {
   </section>
 
   <section id="testimonials">
-    <h2 class="section-title">Testimonials</h2>
-    <div class="testimonial">"An absolute master! Every frame crafted with care and genius." - Content Creator.</div>
-    <div class="testimonial">"GHUMMAN VFX transformed our footage into cinematic gold." - Social Media Influencer.</div>
+    <h2 class="section-title">Testimonials from Clients</h2>
+    <div class="testimonial">"Working with Ghumman was a total game-changer. The pacing, the motion graphics, the sound design... everything felt cinematic. My engagement shot up by 3x, and I finally feel proud of the content I post." - Content Creator (YouTuber).</div>
+    <div class="testimonial">"We’ve worked with dozens of editors, but Ghumman stands out. He’s fast, insanely creative, and detail-obsessed. No Matter if it’s a 60-second ad or a full YouTube series, he delivers studio-level polished content every time, even on tight deadlines too." - Social Media Influencer.</div>
+    <div class="testimonial">"We hired Ghumman for a product launch video, and the results blew us away. He really took a dry concept and turned it into a visually stunning, emotionally engaging piece that helped us close three new clients within days." - Startup Founder.</div>
   </section>
 
   <section id="contact">
     <h2 class="section-title">Contact Me</h2>
     <div class="contact">
-      <p>Interested in working together? Drop a message at <a href="mailto:contact@ghummanvfx.com" style="color:#00f7ff;">contact@ghummanvfx.com</a> or contact me through contacts below:</p>
+      <p>Interested in working together? Drop a message at my Instagaram<a href="https://www.instagram.com/ghummangfx" target="_blank" style="color:#00f7ff;">@GhummanGFX</a> or contact me through contacts below:</p>
       <div class="contact-container">
         <div class="social-icons">
-          <a href="https://www.instagram.com/your_username" target="_blank" class="icon-box">
+          <a href="https://www.instagram.com/GhummanGFX" target="_blank" class="icon-box">
             <div class="icon-circle"><i class="fab fa-instagram"></i></div>
             <div class="platform-name">Instagram</div>
           </a>
-          <a href="https://t.me/your_username" target="_blank" class="icon-box">
+          <a href="https://t.me/GhummanGFX" target="_blank" class="icon-box">
             <div class="icon-circle"><i class="fab fa-telegram-plane"></i></div>
             <div class="platform-name">Telegram</div>
           </a>
-          <a href="https://discord.com/users/your_user_id" target="_blank" class="icon-box">
+          <a href="https://discord.com/users/1344243658781888586" target="_blank" class="icon-box">
             <div class="icon-circle"><i class="fab fa-discord"></i></div>
             <div class="platform-name">Discord</div>
           </a>
-          <a href="mailto:youremail@example.com" class="icon-box">
+          <a href="mailto:ghumman@editentia.com" target="_blank" class="icon-box">
             <div class="icon-circle"><i class="fas fa-envelope"></i></div>
             <div class="platform-name">Email</div>
           </a>
-          <a href="https://x.com/your_username" target="_blank" class="icon-box">
+          <a href="https://x.com/GhummanGFX" target="_blank" class="icon-box">
             <div class="icon-circle"><i class="fab fa-x-twitter"></i></div>
             <div class="platform-name">X (Twitter)</div>
           </a>
@@ -620,7 +564,7 @@ body::-webkit-scrollbar-thumb:hover {
   </section>
 
   <footer>
-    &copy; 2025 GHUMMAN VFX. All rights reserved.
+    &copy; 2025 GHUMMAN GFX. All rights reserved.
   </footer>
 
   <!-- Particles.js CDN -->
@@ -707,32 +651,6 @@ body::-webkit-scrollbar-thumb:hover {
         dropdown.setAttribute('aria-hidden', 'false');
       }
     }
-
-    // Add this at the end of your existing scripts
-    const hamburger = document.querySelector('.hamburger');
-    const nav = document.querySelector('nav');
-    const navLinks = document.querySelectorAll('nav a');
-
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      nav.classList.toggle('active');
-    });
-
-    // Close menu when clicking a link
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        nav.classList.remove('active');
-      });
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
-        hamburger.classList.remove('active');
-        nav.classList.remove('active');
-      }
-    });
   </script>
 </body>
 </html>
