@@ -113,8 +113,18 @@
   .text-gradient{
     background: linear-gradient(100deg, var(--ink) 30%, var(--cyan) 55%, var(--violet) 78%, var(--ink) 100%);
     background-size: 300% 100%;
-    -webkit-background-clip:text; background-clip:text; color:transparent;
+    -webkit-background-clip:text; background-clip:text;
+    color:transparent; -webkit-text-fill-color:transparent;
     animation: sheen 9s linear infinite;
+  }
+  /* Fallback: if a browser can't clip the gradient to text, still show solid readable text instead of nothing */
+  @supports not ((-webkit-background-clip: text) or (background-clip: text)){
+    .text-gradient{
+      background: none;
+      color: var(--cyan);
+      -webkit-text-fill-color: currentColor;
+      animation: none;
+    }
   }
   @keyframes sheen{ 0%{ background-position: 0% 0;} 100%{ background-position: 300% 0;} }
 
